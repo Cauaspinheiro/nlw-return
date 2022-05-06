@@ -1,0 +1,45 @@
+{
+  "components": {
+    "close-button": {
+      "title": "Fechar formulário de feedback"
+    },
+    "widget": {
+      "content": "Feedback"
+    },
+    "widget-form": {
+      "content-step": {
+        "form": {
+          "message": {
+            "placeholder": "Conte com detalhes o que está acontecendo..."
+          },
+          "submit-text": "Enviar feedback"
+        }
+      },
+      "success-step": {
+        "header-image-alt": "Ícone de sucesso",
+        "success-text": "Agradecemos o feedback!",
+        "button-text": "Quero enviar outro"
+      },
+      "type-step": {
+        "header-text": "Deixe seu feedback"
+      },
+      "footer": {
+        "made-by-prefix": "Feito com ♥ pela "
+      },
+      "feedbacks-types": {
+        "bug": {
+          "title": "Problema",
+          "image-alt": "Imagem de um inseto"
+        },
+        "idea": {
+          "title": "Ideia",
+          "image-alt": "Imagem de uma lâmpada"
+        },
+        "other": {
+          "title": "Outro",
+          "image-alt": "Imagem de um balão de pensamento"
+        }
+      }
+    }
+  }
+}

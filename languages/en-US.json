@@ -1,0 +1,45 @@
+{
+  "components": {
+    "close-button": {
+      "title": "Close feedback form"
+    },
+    "widget": {
+      "content": "Feedback"
+    },
+    "widget-form": {
+      "content-step": {
+        "form": {
+          "message": {
+            "placeholder": "Tell us about what's going on..."
+          },
+          "submit-text": "Send feedback"
+        }
+      },
+      "success-step": {
+        "header-image-alt": "Success icon",
+        "success-text": "Thank you for your feedback!",
+        "button-text": "I want to send another"
+      },
+      "type-step": {
+        "header-text": "Leave your feedback"
+      },
+      "footer": {
+        "made-by-prefix": "Made with ♥ by "
+      },
+      "feedbacks-types": {
+        "bug": {
+          "title": "Problem",
+          "image-alt": "Image of an insect"
+        },
+        "idea": {
+          "title": "Idea",
+          "image-alt": "Image of a lamp"
+        },
+        "other": {
+          "title": "Other",
+          "image-alt": "Image of a thought balloon"
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { ArrowLeft } from 'phosphor-react'
 import { FC, FormEvent, Fragment, useState } from 'react'
@@ -5,6 +6,7 @@ import { api } from '../../../services/api'
 import { CloseButton } from '../../CloseButton'
 import { Loading } from '../../Loading'
 import { FEEDBACKS_TYPES, FeedbackType } from '../constants/feedbackType'
+import { useFeedbacksTypesTranslations } from '../hooks/use-feedbacks-types-translations'
 import { ScreenshotButton } from '../ScreenshotButton'
 
 export interface FeedbackContentStepProps {
@@ -14,6 +16,9 @@ export interface FeedbackContentStepProps {
 }
 
 export const FeedbackContentStep: FC<FeedbackContentStepProps> = (props) => {
+  const t = useTranslations('components.widget-form.content-step')
+  const feedbacksTypesT = useFeedbacksTypesTranslations()
+
   const [screenshot, setScreenshot] = useState<string | null>(null)
   const [comment, setComment] = useState('')
   const [isSendingFeedback, setIsSendingFeedback] = useState(false)
@@ -48,11 +53,11 @@ export const FeedbackContentStep: FC<FeedbackContentStepProps> = (props) => {
         <span className="text-xl leading-6 flex items-center gap-2">
           <Image
             src={feedbackTypeInfo.image.source}
-            alt={feedbackTypeInfo.image.alt}
+            alt={feedbacksTypesT(feedbackTypeInfo.image.alt as never)}
             className="w-6 h-6"
           />
 
-          {feedbackTypeInfo.title}
+          {feedbacksTypesT(feedbackTypeInfo.title as never)}
         </span>
 
         <CloseButton />
@@ -64,7 +69,7 @@ export const FeedbackContentStep: FC<FeedbackContentStepProps> = (props) => {
           placeholder-zinc-400 text-zinc-100 border-zinc-600 bg-transparent rounded-md 
           focus:border-brand-500 focus:ring-brand-500 focus:ring-1 focus:outline-none
           scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
-          placeholder="Conte com detalhes o que está acontecendo..."
+          placeholder={t('form.message.placeholder')}
           onChange={(e) => setComment(e.target.value)}
         />
 
@@ -82,7 +87,7 @@ export const FeedbackContentStep: FC<FeedbackContentStepProps> = (props) => {
             disabled:opacity-50 disabled:hover:bg-brand-500"
             disabled={!comment.trim() || isSendingFeedback}
           >
-            {isSendingFeedback ? <Loading /> : 'Enviar feedback'}
+            {isSendingFeedback ? <Loading /> : t('form.submit-text')}
           </button>
         </footer>
       </form>

@@ -1,9 +1,12 @@
+import { useTranslations } from 'next-intl'
 import { FC, useState } from 'react'
 
 import { FeedbackType } from './constants/feedbackType'
 import { StepsDisplay } from './StepsDisplay'
 
 export const WidgetForm: FC = () => {
+  const t = useTranslations('components.widget-form.footer')
+
   const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null)
   const [feedbackSent, setFeedbackSent] = useState(false)
 
@@ -24,7 +27,7 @@ export const WidgetForm: FC = () => {
       />
 
       <footer className="text-xs text-neutral-400">
-        Feito com ♥ pela{' '}
+        {t('made-by-prefix')}
         <a
           className="underline underline-offset-2"
           href="https://rocketseat.com.br"

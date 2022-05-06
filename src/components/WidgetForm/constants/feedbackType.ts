@@ -4,24 +4,24 @@ import thoughtImageUrl from '../../../assets/thought.svg'
 
 export const FEEDBACKS_TYPES = {
   BUG: {
-    title: 'Problema',
+    title: 'bug.title',
     image: {
       source: bugImageUrl,
-      alt: 'Imagem de um inseto',
+      alt: 'bug.image-alt',
     },
   },
   IDEA: {
-    title: 'Ideia',
+    title: 'idea.title',
     image: {
       source: ideaImageUrl,
-      alt: 'Imagem de uma lâmpada',
+      alt: 'idea.image-alt',
     },
   },
   OTHER: {
-    title: 'Outro',
+    title: 'other.title',
     image: {
       source: thoughtImageUrl,
-      alt: 'Imagem de um balão de pensamento',
+      alt: 'other.image-url',
     },
   },
 }
