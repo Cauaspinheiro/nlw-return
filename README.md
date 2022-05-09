@@ -6,7 +6,7 @@ This is the website of the main application of the Next Level Week bootcamp.
 
 ## 📄 Overview
 
-The Feedget is a widget that collects feedbacks inside your application. The user can also take a screenshot of the page to send with the feedback. 
+The Feedget is a widget that collects feedbacks inside your application. The user can also take a screenshot of the page to send with the feedback.
 
 You can see more in the [official website](https://nlw-return-i18n.vercel.app/)
 
@@ -25,11 +25,11 @@ You can see the translation in the app with the following links:
 - :brazil: [Brazil](https://nlw-return-i18n.vercel.app/pt-BR)
 - :us: [English](https://nlw-return-i18n.vercel.app/en-US)
 
-The locations files are in the `translations` folder
+The locations files are in the `languages` folder
 
-Lib used for i18n: 
+Lib used for i18n:
 
-- [Nextjs i18n docs](https://nextjs.org/docs/advanced-features/i18n-routing)
+- [Next.js i18n docs](https://nextjs.org/docs/advanced-features/i18n-routing)
 - [Next-intl](https://next-intl-docs.vercel.app/)
 
 ## 🏭 Technologies
@@ -117,11 +117,19 @@ You can install the project's dependencies by running the following command insi
 yarn
 ```
 
-### `.env` - Enviroment variables
+### `.env` - Environment variables
 
-The dotenv file (.env) contains all the enviroment variables of the project. You can see the variable inside the `.env.example` file.
+The dotenv file (.env) contains all the environment variables of the project. You can see the variable inside the `.env.example` file.
 
 To configure the `.env`, you can create a new `.env` file and copy all the `.env.example` content inside this file. Then, complete the value of each key with you configuration.
+
+#### API URL
+
+key: `NEXT_PUBLIC_API_URL`
+
+The API url to frontend communicate with.
+
+This key is prefixed with `NEXT_PUBLIC_` due to [Next.js security protocols](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser)
 
 ---
 
@@ -135,7 +143,7 @@ To configure the `.env`, you can create a new `.env` file and copy all the `.env
 yarn build
 ```
 
-Build the project artifact for production using [Nextjs CLI](https://nextjs.org/docs/api-reference/cli).
+Build the project artifact for production using [Next.js CLI](https://nextjs.org/docs/api-reference/cli).
 
 ### start
 
@@ -143,7 +151,7 @@ Build the project artifact for production using [Nextjs CLI](https://nextjs.org/
 yarn start
 ```
 
-Run the build artifact with [Nextjs CLI](https://nextjs.org/docs/api-reference/cli).
+Run the build artifact with [Next.js CLI](https://nextjs.org/docs/api-reference/cli).
 
 You have to run the `build` command before you run this command to work.
 
@@ -153,7 +161,7 @@ You have to run the `build` command before you run this command to work.
 yarn dev
 ```
 
-Start the project with hot-reloading using [Nextjs CLI](https://nextjs.org/docs/api-reference/cli).
+Start the project with hot-reloading using [Next.js CLI](https://nextjs.org/docs/api-reference/cli).
 
 ### lint
 
@@ -161,7 +169,7 @@ Start the project with hot-reloading using [Nextjs CLI](https://nextjs.org/docs/
 yarn lint
 ```
 
-Lint the project code using [Nextjs CLI](https://nextjs.org/docs/api-reference/cli).
+Lint the project code using [Next.js CLI](https://nextjs.org/docs/api-reference/cli).
 
 ## 🔗 Useful links
 
