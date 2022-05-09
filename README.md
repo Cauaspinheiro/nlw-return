@@ -12,7 +12,9 @@ You can see more in the [official website](https://nlw-return-i18n.vercel.app/)
 
 ### Web
 
-<!-- Web overview image (Running the app in en and pt) -->
+![Overview](./.github/assets/overview.gif)
+
+[See in video format](https://res.cloudinary.com/dpkgd6rhb/video/upload/v1652063254/github/nlw-return-web-overview_jynic9.mp4)
 
 This app collect the feedbacks from the user and send them to the API. It can also take screenshots of the site if the requested to send it with the feedback.
 
