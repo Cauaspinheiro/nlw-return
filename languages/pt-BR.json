@@ -1,4 +1,9 @@
 {
+  "pages": {
+    "home": {
+      "made-by-title": "Feito por"
+    }
+  },
   "components": {
     "close-button": {
       "title": "Fechar formulário de feedback"

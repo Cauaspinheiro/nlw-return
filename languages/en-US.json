@@ -1,4 +1,9 @@
 {
+  "pages": {
+    "home": {
+      "made-by-title": "Made by"
+    }
+  },
   "components": {
     "close-button": {
       "title": "Close feedback form"
